@@ -44,4 +44,11 @@ print(range_tensor)
 type_tensor = torch.ones_like(input=MATRIX)
 print(type_tensor)
 
-#Tensor Data Types
+#Tensor data types
+#There are many tensor data types in pytorch. The most common ones are: (torch.float32 or torch.float)
+float_32_tensor = torch.tensor([3.0, 6.0, 9.0],
+                               dtype=None, # defaults to None, which is torch.float32 or whatever datatype is passed
+                               device=None, # defaults to None, which uses the default tensor type
+                               requires_grad=False) # if True, operations performed on the tensor are recorded
+
+print(float_32_tensor.shape, float_32_tensor.dtype, float_32_tensor.device)
